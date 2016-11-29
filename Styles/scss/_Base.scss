@@ -1,0 +1,63 @@
+// Mixin
+@mixin media-xs-devices{
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin media-xs-devices-landscape{
+  @media (max-width: 767px) and (orientation: landscape ) {
+    @content;
+  }
+}
+@mixin media-sm-devices{
+  @media (min-width: 768px) and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin media-md-devices{
+  @media (min-width: 992px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin media-lg-devices {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin media-sm-devices-up {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-md-devices-up {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin media-sm-devices-down {
+  @media (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin media-md-devices-down {
+  @media (max-width: 1199px) {
+    @content;
+  }
+}
+@mixin touch-devices {
+  @include media-md-devices-down {
+    @content;
+  }
+}
+@mixin not-touch-devices {
+  @include media-lg-devices {
+    @content;
+  }
+}
