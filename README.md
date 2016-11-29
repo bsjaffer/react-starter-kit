@@ -6,8 +6,7 @@ React starter kit with webpack,sass and ES6
 First, clone the project:
 
 ```bash
-$ git clone https://github.com/bsjaffer/react-starter-kit.git <my-project-name>
-$ cd <my-project-name>
+$ git clone https://github.com/bsjaffer/react-starter-kit.git
 ```
 
 Then install dependencies and check to see it works
